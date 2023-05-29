@@ -11,4 +11,12 @@
       <ProjectReference Include="..\Entities\Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="7.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0-preview.4.23259.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
 </Project>

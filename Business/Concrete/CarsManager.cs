@@ -1,6 +1,8 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Business.Constants;
 
 namespace Business.Concrete;
 
@@ -12,34 +14,45 @@ public class CarsManager:ICarsService
     {
         _carsDal = carsDal;
     }
-    public Cars GetById(int carId)
+    public IDataResult<Cars> GetById(int carId)
     {
-        return _carsDal.Get(c => c.CarId == carId);
+        try
+        {
+            return new SuccessDataResult<Cars>(_carsDal.Get(c => c.CarId == carId));
+        }
+        catch (Exception e)
+        {
+            return new ErrorDataResult<Cars>(message: "ID'ye Göre Araç Getirme Başarısız !" + e);
+        }
+        
     }
 
-    public List<Cars> GetList()
+    public IDataResult<List<Cars>> GetList()
     {
-        return _carsDal.GetList().ToList();
+        return new SuccessDataResult<List<Cars>>(_carsDal.GetList().ToList());
     }
 
-    public List<Cars> GetListByCategory(int categoryId)
+    public IDataResult<List<Cars>> GetListByCategory(int categoryId)
     {
-        return _carsDal.GetList(c => c.CategoryId == categoryId).ToList();
+        return new SuccessDataResult<List<Cars>>(_carsDal.GetList(c => c.CategoryId == categoryId).ToList());
     }
 
-    public void Add(Cars car)
-    {
+    public IResult Add(Cars car)
+    { 
         //validation
         _carsDal.Add(car);
+        return new SuccessResult(true,Messages.CarAddedMsg);
     }
 
-    public void Delete(Cars car)
+    public IResult Delete(Cars car)
     {
         _carsDal.Delete(car);
+        return new SuccessResult(true,Messages.CarDeletedMsg);
     }
 
-    public void Update(Cars car)
+    public IResult Update(Cars car)
     {
         _carsDal.Update(car);
+        return new SuccessResult(false); // TEST AMAÇLI FALSE
     }
 }

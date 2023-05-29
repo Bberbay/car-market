@@ -1,13 +1,15 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 
 namespace Business.Abstract;
 
 public interface ICarsService
 {
-    Cars GetById(int carId);
-    List<Cars> GetList();
-    List<Cars> GetListByCategory(int categoryId);
-    void Add(Cars car);
-    void Delete(Cars car);
-    void Update(Cars car);
+    IDataResult<Cars> GetById(int carId);
+    IDataResult<List<Cars>> GetList();
+    IDataResult<List<Cars>> GetListByCategory(int categoryId);
+    IResult Add(Cars car);
+    IResult Delete(Cars car);
+    IResult Update(Cars car);
+    // Durumu görmek için result döndürüldü.
 }
