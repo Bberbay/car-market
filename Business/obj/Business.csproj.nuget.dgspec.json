@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bberb\\RiderProjects\\car-market\\Business\\Business.csproj": {}
+    "C:\\Users\\picks\\RiderProjects\\car-market\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bberb\\RiderProjects\\car-market\\Business\\Business.csproj": {
+    "C:\\Users\\picks\\RiderProjects\\car-market\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bberb\\RiderProjects\\car-market\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\picks\\RiderProjects\\car-market\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\bberb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Business\\obj\\",
+        "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\picks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bberb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\picks\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj"
+              "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj"
               }
             }
           }
@@ -78,24 +76,22 @@
         }
       }
     },
-    "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj": {
+    "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\bberb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\obj\\",
+        "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\picks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bberb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\picks\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -149,35 +145,33 @@
         }
       }
     },
-    "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\bberb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\picks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\picks\\RiderProjects\\car-market\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bberb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\picks\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj"
+              "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj"
               },
-              "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj"
+              "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj"
               }
             }
           }
@@ -193,6 +187,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0-preview.4.23259.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0-preview.4.23259.3, )"
             },
@@ -227,32 +227,30 @@
         }
       }
     },
-    "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
+    "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\bberb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\picks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bberb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\picks\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj"
+              "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj"
               }
             }
           }

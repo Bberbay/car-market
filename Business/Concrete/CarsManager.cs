@@ -3,6 +3,8 @@ using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Business.Constants;
+using DataAccess.Concrete.EntityFramework.Context;
+using Entities.Dtos;
 
 namespace Business.Concrete;
 
@@ -18,7 +20,7 @@ public class CarsManager:ICarsService
     {
         try
         {
-            return new SuccessDataResult<Cars>(_carsDal.Get(c => c.CarId == carId));
+            return new SuccessDataResult<Cars>(_carsDal.Get(c => c.Id == carId));
         }
         catch (Exception e)
         {
@@ -37,10 +39,17 @@ public class CarsManager:ICarsService
         return new SuccessDataResult<List<Cars>>(_carsDal.GetList(c => c.CategoryId == categoryId).ToList());
     }
 
-    public IResult Add(Cars car)
+    public IResult Add(CarAddDto car)
     { 
         //validation
-        _carsDal.Add(car);
+        Cars cars = new Cars()
+        {
+            CategoryId = car.CategoryId,
+            Price = car.Price,
+            Year = car.Year,
+            UsersId = car.UserId
+        };
+        _carsDal.Add(cars);
         return new SuccessResult(true,Messages.CarAddedMsg);
     }
 

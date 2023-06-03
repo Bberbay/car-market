@@ -11,6 +11,7 @@
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "Business": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Design": "8.0.0-preview.4.23259.3",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.4.23259.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
           "Swashbuckle.AspNetCore": "6.4.0"

@@ -12,5 +12,6 @@ public class AutofacBusinessModule: Module
     {
         builder.RegisterType<CarsManager>().As<ICarsService>();
         builder.RegisterType<EfCarsDal>().As<ICarsDal>();
+        builder.RegisterType<EfUsersDal>().As<IUsersDal>();
     }
 }

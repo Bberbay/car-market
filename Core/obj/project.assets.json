@@ -1054,26 +1054,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bberb\\.nuget\\packages\\": {}
+    "C:\\Users\\picks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\bberb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bberb\\RiderProjects\\car-market\\Core\\obj\\",
+      "projectPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\picks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\picks\\RiderProjects\\car-market\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bberb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\picks\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

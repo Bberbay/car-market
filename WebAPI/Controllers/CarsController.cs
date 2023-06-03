@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
+using Entities.Dtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -54,8 +55,8 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
         
-        [HttpPost("add")]
-        public IActionResult Add(Cars cars)
+        [HttpPost("car-add")]
+        public IActionResult Add(CarAddDto cars)
         {
             var result = _carsService.Add(cars);
             if (result.Success)
@@ -65,7 +66,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
         
-        [HttpPost("update")]
+        [HttpPost("car-update")]
         public IActionResult Update(Cars cars)
         {
             var result = _carsService.Update(cars);
@@ -76,10 +77,10 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
         
-        [HttpPost("delete")]
+        [HttpPost("car-delete")]
         public IActionResult Delete(Cars cars)
         {
-            var result = _carsService.Add(cars);
+            var result = _carsService.Delete(cars);
             if (result.Success)
             {
                 return Ok(result.Message);

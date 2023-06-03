@@ -11,6 +11,7 @@
           "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.4.23259.3",
+          "Microsoft.EntityFrameworkCore.Design": "8.0.0-preview.4.23259.3",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.4.23259.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0-preview.4"
         },
