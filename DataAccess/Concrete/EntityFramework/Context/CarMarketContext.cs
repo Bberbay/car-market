@@ -12,4 +12,5 @@ public class CarMarketContext : DbContext // Ef object
     }
     public DbSet<Cars> Cars { get; set; }
     public DbSet<Users> Users { get; set; }
+    public DbSet<CarProperties> CarProperties { get; set; }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
 using Entities.Dtos;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,17 +16,24 @@ namespace WebAPI.Controllers
     public class CarsController : ControllerBase
     {
         private ICarsService _carsService;
+        private ICarPropertiesService _carPropertiesService;
 
         public CarsController(ICarsService carsService)
         {
             _carsService = carsService;
         }
+        
         [HttpGet("getall")]
         public IActionResult GetList()
         {
             var result = _carsService.GetList();
             if (result.Success)
             {
+                // foreach (var car in result.Data)
+                // {
+                //     var carPropertiesResult = _carsService.GetById(car.CarPropertiesId).Data;
+                //
+                // }
                 return Ok(result.Data);
             }
 
@@ -56,7 +64,7 @@ namespace WebAPI.Controllers
         }
         
         [HttpPost("car-add")]
-        public IActionResult Add(CarAddDto cars)
+        public IActionResult Add([FromBody]CarAddDto cars)
         {
             var result = _carsService.Add(cars);
             if (result.Success)

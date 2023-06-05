@@ -5,5 +5,5 @@ namespace DataAccess.Abstract;
 
 public interface ICarsDal:IEntityRepository<Cars>
 {
-    
+    public IList<Cars> GetListWithProp();
 }

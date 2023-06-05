@@ -21,6 +21,50 @@ namespace DataAccess.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Entities.Concrete.CarProperties", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<short>("CentralLock")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<short>("EngineCapacity")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("EnginePower")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("FoldingMirros")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("FuelType")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("Gear")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("HeadlampFog")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("ParkingSensor")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("SunRoof")
+                        .HasColumnType("smallint");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CarProperties");
+                });
+
             modelBuilder.Entity("Entities.Concrete.Cars", b =>
                 {
                     b.Property<int>("Id")
@@ -29,11 +73,18 @@ namespace DataAccess.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CarPropertiesId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("UsersId")
                         .HasColumnType("integer");
@@ -42,6 +93,8 @@ namespace DataAccess.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CarPropertiesId");
 
                     b.HasIndex("UsersId");
 
@@ -71,13 +124,26 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Entities.Concrete.Cars", b =>
                 {
+                    b.HasOne("Entities.Concrete.CarProperties", "CarProperties")
+                        .WithMany("Cars")
+                        .HasForeignKey("CarPropertiesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Entities.Concrete.Users", "Users")
                         .WithMany("Cars")
                         .HasForeignKey("UsersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("CarProperties");
+
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Entities.Concrete.CarProperties", b =>
+                {
+                    b.Navigation("Cars");
                 });
 
             modelBuilder.Entity("Entities.Concrete.Users", b =>

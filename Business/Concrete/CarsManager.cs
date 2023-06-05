@@ -11,6 +11,10 @@ namespace Business.Concrete;
 public class CarsManager:ICarsService
 {
     private ICarsDal _carsDal;
+
+    private ICarPropertiesService _carPropertiesService;
+
+    private ICarPropertiesDal _carPropertiesDal;
     // ef bağımlılık azalması için dependency
     public CarsManager(ICarsDal carsDal)
     {
@@ -31,7 +35,14 @@ public class CarsManager:ICarsService
 
     public IDataResult<List<Cars>> GetList()
     {
-        return new SuccessDataResult<List<Cars>>(_carsDal.GetList().ToList());
+        var cars = _carsDal.GetListWithProp().ToList();
+        // foreach (var car in cars)
+        // {
+        //     car.CarProperties = _carPropertiesService.GetById(car.CarPropertiesId).Data;
+        // }
+
+        return new SuccessDataResult<List<Cars>>(cars);
+
     }
 
     public IDataResult<List<Cars>> GetListByCategory(int categoryId)
@@ -44,10 +55,13 @@ public class CarsManager:ICarsService
         //validation
         Cars cars = new Cars()
         {
+            Title = car.Title,
             CategoryId = car.CategoryId,
             Price = car.Price,
             Year = car.Year,
-            UsersId = car.UserId
+            UsersId = car.UserId,
+            CarPropertiesId = car.CarPropertiesId
+
         };
         _carsDal.Add(cars);
         return new SuccessResult(true,Messages.CarAddedMsg);
